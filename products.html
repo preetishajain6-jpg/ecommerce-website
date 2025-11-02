@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - My Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🛒 My E-Commerce Store</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart 🛍️</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2 style="text-align:center">All Products</h2>
+
+        <!-- ✅ Category Dropdown -->
+        <div style="text-align:center; margin-bottom: 20px;">
+            <label for="categorySelect"><b>Filter by Category:</b></label>
+            <select id="categorySelect" onchange="filterByCategory()">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewelery</option>
+                <option value="men's clothing">Men's Clothing</option>
+                <option value="women's clothing">Women's Clothing</option>
+            </select>
+        </div>
+
+        <div class="products" id="product-list"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
